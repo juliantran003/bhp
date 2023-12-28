@@ -1,0 +1,21 @@
+:root {
+  --main-background-color: #d9d9d9;
+}
+
+body {
+  background-color: var(--main-background-color);
+}
+
+@font-face {
+  font-family: "Aqala";
+  src: url("../public/fonts/Aqala Display Free.ttf");
+}
+
+@font-face {
+  font-family: "Kawingan";
+  src: url("../public/fonts/Kawingan-DEMO.otf");
+}
+@font-face {
+  font-family: "Atreyu";
+  src: url("../public/fonts/Atreyu.otf");
+}
