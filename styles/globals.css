@@ -2,10 +2,6 @@
   --main-background-color: #d9d9d9;
 }
 
-body {
-  background-color: var(--main-background-color);
-}
-
 @font-face {
   font-family: "Aqala";
   src: url("../public/fonts/Aqala Display Free.ttf");
@@ -18,4 +14,206 @@ body {
 @font-face {
   font-family: "Atreyu";
   src: url("../public/fonts/Atreyu.otf");
+}
+@font-face {
+  font-family: "Comforta";
+  src: url("../public/fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Zurich";
+  src: url("../public/fonts/Zurich Ultra Black Extended Regular.otf");
+}
+@font-face {
+  font-family: "Mazius";
+  src: url("../public/fonts/MaziusDisplay-Regular.otf");
+}
+@font-face {
+  font-family: "Futura";
+  src: url("../public/fonts/FuturaPTMedium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../public/fonts/FuturaPTLight.otf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../public/fonts/FuturaPTHeavy.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FuturaCondensed";
+  src: url("../public/fonts/FuturaPTCondBook.otf") format("truetype");
+}
+
+body {
+  /* background: url("../public/img/white-texture.png") 10%;
+  background-repeat: repeat;
+  background-size: contain; */
+  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  background-size: fixed;
+}
+
+/* Header */
+
+.header {
+  filter: blur(0.5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 160px);
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* background: url("../public/img/flag.png");
+  background-size: 10%;
+  background-position-x: 93.5%;
+  background-position-y: 50px;
+  background-repeat: no-repeat; */
+  background: url(https://grainy-gradients.vercel.app/noise.svg);
+  background-size: fixed;
+  background-color: white;
+  z-index: 2;
+}
+
+.header_title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.header h1 {
+  background: url("../public/img/black-texture.png");
+  background-size: cover;
+  font-family: "Zurich";
+  font-size: 30px;
+  margin-bottom: 15px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.header h2 {
+  line-height: 24px;
+  font-size: 20px;
+  font-family: "Comforta";
+  background: url("../public/img/red-texture.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header menu a {
+  z-index: 3;
+  text-transform: uppercase;
+
+  font-size: 20px;
+  font-family: "Futura";
+
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 5px;
+  background: url("../public/img/black-texture.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+/* .header menu a:hover {
+  background-color: black;
+  color: white;
+} */
+
+/* Home */
+
+.home {
+  filter: blur(0.5px);
+  max-width: 1440px;
+  padding: 0px 80px;
+  padding-top: 280px;
+}
+
+.home .overview h2 {
+  position: relative;
+  font-family: "Comforta";
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: light;
+  background: url("../public/img/black-texture.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0.6;
+  width: fit-content;
+}
+
+/* .home .overview h2::after {
+  position: absolute;
+  top: 50%;
+  left: calc(-100% + -30px);
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+} */
+
+.home .overview p {
+  background: url("../public/img/black-texture.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-family: "Comforta";
+  font-size: 18px;
+  font-weight: light;
+  line-height: 28px;
+
+  opacity: 0.6;
+}
+
+.home > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 100px;
+}
+
+.home_menu {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.home_menu button {
+  overflow: hidden;
+
+  font-size: 18px;
+  border: none;
+  text-decoration: none;
+  background: none;
+  font-family: "Comforta";
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 18px;
+  opacity: 0.2;
+  white-space: pre;
+  cursor: pointer;
+}
+.home_menu button:hover {
+  opacity: 0.6;
 }
