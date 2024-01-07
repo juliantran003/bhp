@@ -10,9 +10,7 @@ export default function Header() {
           PRINT<br></br> AGAINST<br></br> APARTHEID
         </h1>
 
-        <h2>
-          BOYCOTT<br></br> HEWLETT & PACKARD
-        </h2>
+        <h2>BOYCOTT HEWLETT & PACKARD</h2>
       </div>
 
       <menu>
