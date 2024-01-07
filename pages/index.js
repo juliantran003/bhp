@@ -15,7 +15,10 @@ export default function Home() {
         <div className="home_menu">
           {overview.map((overview) => {
             return (
-              <button onClick={() => setSelected(overview)}>
+              <button
+                key={overview.title}
+                onClick={() => setSelected(overview)}
+              >
                 {overview.title}
               </button>
             );
