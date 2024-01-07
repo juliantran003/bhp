@@ -27,9 +27,7 @@ export default function Home() {
         </div>
         <div className="overview">
           <h2>Statement</h2>
-          <div>
-            <p>{selected.text}</p>
-          </div>
+          <div dangerouslySetInnerHTML={{ __html: selected.text }}></div>
         </div>
       </div>
     </div>

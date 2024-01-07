@@ -61,6 +61,15 @@ body {
   background: url(https://grainy-gradients.vercel.app/noise.svg);
   background-size: fixed;
 }
+.underline {
+  position: relative;
+  text-decoration: underline;
+}
+.bold {
+  position: relative;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
 
 /* Header */
 
@@ -180,7 +189,7 @@ body {
   font-size: 18px;
   font-weight: light;
   line-height: 28px;
-
+  text-underline-offset: 4px;
   opacity: 0.6;
 }
 
