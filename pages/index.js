@@ -18,6 +18,7 @@ export default function Home() {
               <button
                 key={overview.title}
                 onClick={() => setSelected(overview)}
+                className={selected.title === overview.title ? "clicked" : ""}
               >
                 {overview.title}
               </button>
@@ -25,7 +26,7 @@ export default function Home() {
           })}
         </div>
         <div className="overview">
-          <h2>{selected.title}</h2>
+          <h2>Statement</h2>
           <div>
             <p>{selected.text}</p>
           </div>
