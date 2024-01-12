@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 // JSON
 import overview from "../public/JSON/overview.json";
 import { MiddlewareNotFoundError } from "next/dist/shared/lib/utils";
+import pledge from "../public/JSON/pledge.json";
+import impact from "../public/JSON/impact.json";
 
 export default function Home() {
   const router = useRouter();
@@ -87,9 +89,9 @@ export default function Home() {
           ) : main === "overview" ? (
             <div dangerouslySetInnerHTML={{ __html: selected.text }}></div>
           ) : main === "impact" ? (
-            <p></p>
+            <div dangerouslySetInnerHTML={{ __html: impact[0].text }}></div>
           ) : (
-            <p></p>
+            <div dangerouslySetInnerHTML={{ __html: pledge[0].text }}></div>
           )}
         </div>
       </div>

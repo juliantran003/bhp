@@ -54,6 +54,13 @@
   src: url("../public/fonts/FuturaPTCondBook.otf") format("truetype");
 }
 
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   /* background: url("../public/img/white-texture.png") 10%;
   background-repeat: repeat;
@@ -191,6 +198,23 @@ body {
   line-height: 28px;
   text-underline-offset: 4px;
   opacity: 0.6;
+}
+
+.home .overview li {
+  background: url("../public/img/black-texture.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* text-transform: uppercase; */
+  margin-top: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: light;
+  line-height: 28px;
+  text-underline-offset: 4px;
+  opacity: 0.6;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 .home > div {
