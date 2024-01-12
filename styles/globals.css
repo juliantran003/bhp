@@ -109,6 +109,7 @@ body {
 }
 
 .header h1 {
+  cursor: pointer;
   background: url("../public/img/black-texture.png");
   background-size: cover;
   font-family: "Zurich";
@@ -257,4 +258,74 @@ body {
 }
 .smaller {
   font-size: 12px !important;
+}
+
+/* Template */
+
+.template {
+  filter: blur(0.5px);
+  max-width: 1440px;
+  padding: 0px 80px;
+  padding-top: 260px;
+  padding-bottom: 260px;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.template_email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.template_email h2 {
+  position: relative;
+  font-family: "Comforta";
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: light;
+  background: url("../public/img/black-texture.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0.6;
+  width: fit-content;
+}
+
+.template_email p {
+  margin-top: 50px;
+  /* padding: 100px 80px; */
+  /* border: dashed black 1px; */
+  background: url("../public/img/black-texture.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* text-transform: uppercase; */
+  margin-top: 60px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: light;
+  line-height: 20px;
+  text-underline-offset: 4px;
+  opacity: 0.6;
+}
+
+.copypaste {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: fit-content;
+  border: solid black 1px;
+  cursor: pointer;
+}
+
+.copypaste:hover {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: fit-content;
+  border: solid black 1px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.133);
 }

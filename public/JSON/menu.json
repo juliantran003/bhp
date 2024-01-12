@@ -1,21 +1,21 @@
 [
   {
     "title": "Statement",
-    "url": ""
+    "url": "/"
   },
   {
     "title": "Resources",
 
-    "url": "resources"
+    "url": "/resources"
   },
   {
     "title": "Testimonies",
 
-    "url": "testimonies"
+    "url": "/testimonies"
   },
   {
     "title": "Template",
 
-    "url": "template"
+    "url": "/template"
   }
 ]
