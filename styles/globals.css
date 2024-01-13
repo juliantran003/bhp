@@ -70,11 +70,11 @@ body {
 }
 .underline {
   position: relative;
-  text-decoration: underline;
+  text-decoration: underline 1px;
 }
 .bold {
   position: relative;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.3px;
   -webkit-text-stroke-color: black;
 }
 
@@ -200,7 +200,6 @@ body {
   line-height: 28px;
   text-underline-offset: 4px;
   opacity: 0.6;
-  filter: blur(0.5px);
 }
 
 .home .overview li {
