@@ -200,6 +200,7 @@ body {
   line-height: 24px;
   text-underline-offset: 4px;
   opacity: 0.6;
+  filter: blur(0.3px);
 }
 
 .home .overview li {
@@ -310,6 +311,7 @@ body {
   line-height: 20px;
   text-underline-offset: 4px;
   opacity: 0.6;
+  filter: blur(0.3px);
 }
 
 .copypaste {
