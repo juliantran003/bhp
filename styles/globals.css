@@ -197,7 +197,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
   font-weight: light;
-  line-height: 28px;
+  line-height: 24px;
   text-underline-offset: 4px;
   opacity: 0.6;
 }
@@ -264,7 +264,6 @@ body {
 /* Template */
 
 .template {
-  filter: blur(0.5px);
   max-width: 1440px;
   padding: 0px 80px;
   padding-top: 260px;
@@ -281,6 +280,7 @@ body {
 }
 
 .template_email h2 {
+  filter: blur(0.5px);
   position: relative;
   font-family: "Comforta";
   font-size: 30px;
