@@ -1,5 +1,29 @@
 :root {
   --main-background-color: #d9d9d9;
+  --main-white: #f7faf2;
+  --main-black: #000000;
+  --main--red: #ad0718;
+  --main--green: #3ca832;
+}
+
+.green {
+  color: var(--main--green);
+}
+.red {
+  color: var(--main--red);
+}
+.black {
+  color: var(--main--black);
+}
+.white {
+  color: var(--main--white);
+}
+
+.title {
+  font-family: "Title";
+}
+.heading {
+  font-family: "Heading";
 }
 
 @font-face {
@@ -54,6 +78,22 @@
   src: url("../public/fonts/FuturaPTCondBook.otf") format("truetype");
 }
 
+@font-face {
+  font-family: "Title";
+  src: url("../public/fonts/ABCFavoritCompressed-Black-Trial.otf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Heading";
+  src: url("../public/fonts/ABCFavoritVariable-Trial.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Body";
+  src: url("../public/fonts/ABCFavoritVariable-Trial.ttf") format("truetype");
+}
+
 * {
   -ms-overflow-style: none;
 }
@@ -65,8 +105,16 @@ body {
   /* background: url("../public/img/white-texture.png") 10%;
   background-repeat: repeat;
   background-size: contain; */
-  background: url(https://grainy-gradients.vercel.app/noise.svg);
-  background-size: fixed;
+  /* background: url(https://grainy-gradients.vercel.app/noise.svg); */
+
+  background: url("../public/img/PAA_Edited.jpg");
+  background-size: 111vw;
+  background-color: var(--main-black);
+  background-position: top center;
+  background-repeat: repeat;
+
+  /* background: url("../public/img/Texturelabs_Paper_340XL.jpg");
+  background-size: cover; */
 }
 .underline {
   position: relative;
@@ -75,29 +123,32 @@ body {
 .bold {
   position: relative;
   -webkit-text-stroke-width: 1.3px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: var(--main-white);
+}
+.white-background {
+  background-color: var(--main-white);
+  background-clip: border-box;
 }
 
 /* Header */
 
 .header {
-  filter: blur(0.5px);
-  position: fixed;
+  /* filter: blur(0.5px); */
+  /* position: fixed; */
   top: 0;
   left: 0;
-  width: calc(100% - 160px);
-  padding: 40px 80px;
+  width: calc(100% - 200px);
+  padding: 30px 100px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  /* background: url("../public/img/flag.png");
-  background-size: 10%;
-  background-position-x: 93.5%;
-  background-position-y: 50px;
-  background-repeat: no-repeat; */
-  background: url(https://grainy-gradients.vercel.app/noise.svg);
-  background-size: fixed;
-  background-color: white;
+  align-items: flex-start;
+  /* background: url("../public/img/PAA_Edited.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* background: url(https://grainy-gradients.vercel.app/noise.svg); */
+  /* background-size: fixed;
+  background-color: white; */
   z-index: 2;
 }
 
@@ -123,58 +174,79 @@ body {
   line-height: 24px;
   font-size: 20px;
   font-family: "Comforta";
-  background: url("../public/img/red-texture.png");
+  color: var(--main-white);
+  /* background: url("../public/img/red-texture.png");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; */
+}
+
+.header menu {
+  padding-top: 18px;
 }
 
 .header menu a {
   z-index: 3;
   text-transform: uppercase;
-
-  font-size: 14px;
-  font-family: "Comforta";
+  color: var(--main-white);
+  font-size: 20px;
+  font-family: "Heading";
 
   margin-left: 10px;
   text-decoration: none;
-  padding: 5px;
-  background: url("../public/img/black-texture.png");
+  padding: 15px;
+  /* background: url("../public/img/7.jpg");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; */
   cursor: pointer;
 }
 
-/* .header menu a:hover {
-  background-color: black;
-  color: white;
-} */
+.header menu a:hover {
+  color: var(--main--red);
+}
+
+.header_logo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
 
 /* Home */
 
 .home {
   /* filter: blur(0.5px); */
   max-width: 1440px;
-  padding: 0px 80px;
-  padding-top: 260px;
+  padding: 0px 30px;
+  padding-top: 0px;
+  margin: 0 auto;
+}
+
+.home .overview {
+  padding: 0px 60px;
+  background: url("../public/img/Texturelabs_Paper_340XL.jpg");
+  background-size: contain;
+
+  padding-bottom: 60px;
 }
 
 .home .overview h2 {
+  margin-top: 40px;
   position: relative;
-  font-family: "Comforta";
+  font-family: "Heading";
   font-size: 30px;
   text-transform: uppercase;
   font-weight: light;
-  background: url("../public/img/black-texture.png");
+  /* background: url("../public/img/black-texture.png");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  opacity: 0.6;
+  opacity: 0.6; */
   width: fit-content;
-  filter: blur(0.5px);
+  /* filter: blur(0.5px); */
+  color: var(--main-white);
 }
 
 /* .home .overview h2::after {
@@ -188,43 +260,54 @@ body {
 } */
 
 .home .overview p {
-  background: url("../public/img/black-texture.png");
+  /* background: url("../public/img/black-texture.png");
   background-size: cover;
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
   /* text-transform: uppercase; */
   margin-top: 20px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
+  font-family: "Body";
+  font-size: 20px;
   font-weight: light;
   line-height: 24px;
   text-underline-offset: 4px;
-  opacity: 0.6;
-  filter: blur(0.3px);
+  /* opacity: 0.6; */
+  /* filter: blur(0.3px); */
+  color: var(--main-white);
+  /* background-color: var(--main-white); */
+  /* padding: 15px 15px; */
 }
 
-.home .overview li {
-  background: url("../public/img/black-texture.png");
+.home .overview_menu {
+  /* background-color: var(--main-white); */
+  /* padding: 15px 15px; */
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.home .overview_menu li {
+  /* background: url("../public/img/black-texture.png");
   background-size: cover;
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
   /* text-transform: uppercase; */
-  margin-top: 20px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
+  color: var(--main-white);
+  font-family: "Body";
+  font-size: 20px;
   font-weight: light;
   line-height: 28px;
   text-underline-offset: 4px;
-  opacity: 0.6;
-  list-style-type: disc;
+  text-decoration: underline;
+  list-style-type: none;
   list-style-position: inside;
+  cursor: pointer;
 }
 
 .home > div {
   display: flex;
 
   margin: 0 auto;
-  width: 70%;
+  width: 89.5%;
   margin-bottom: 100px;
 }
 
@@ -260,6 +343,40 @@ body {
 }
 .smaller {
   font-size: 12px !important;
+}
+
+.impact_list {
+  margin-top: 20px;
+  color: var(--main-white);
+  font-family: "Body";
+  font-size: 18px;
+  font-weight: light;
+  line-height: 28px;
+  text-underline-offset: 4px;
+  width: 100%;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+.impact_list li {
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style-position: outside;
+}
+.impact_list a {
+  margin-top: 20px;
+  color: var(--main-white);
+  font-family: "Heading";
+  font-size: 20px;
+  font-weight: light;
+  line-height: 28px;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.italic {
+  font-style: italic;
 }
 
 /* Template */
@@ -333,10 +450,116 @@ body {
   background-color: rgba(0, 0, 0, 0.133);
 }
 
+/* PLEDGE */
+
+.pledge {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0px 30px;
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.pledge p {
+  background: url("../public/img/Texturelabs_Paper_340XL.jpg");
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: "Body";
+  font-size: 20px;
+  font-weight: light;
+  line-height: 24px;
+  text-underline-offset: 4px;
+  width: 70%;
+  color: var(--main-white);
+  padding: 55px 45px;
+  text-align: start;
+}
+
+.pledge a {
+  margin-top: 20px;
+  color: var(--main-white);
+  font-family: "Heading";
+  font-size: 20px;
+  font-weight: light;
+  line-height: 28px;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-style: italic;
+}
+
+/* RESOURCES */
+
+.resources {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0px 30px;
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.resources > div {
+  background: url("../public/img/Texturelabs_Paper_340XL.jpg");
+  background-size: cover;
+  width: 70%;
+  padding: 55px 45px;
+  margin: 0 auto;
+}
+
+.resources p {
+  text-align: center;
+  margin: 0 auto;
+
+  font-family: "Body";
+  font-size: 20px;
+  font-weight: light;
+  line-height: 24px;
+  text-underline-offset: 4px;
+  width: 100%;
+  color: var(--main-white);
+  margin-bottom: 40px;
+  text-align: start;
+}
+.resources h3 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: "Heading";
+  font-size: 28px;
+  font-weight: light;
+  line-height: 24px;
+  text-underline-offset: 4px;
+  width: 100%;
+  color: var(--main-white);
+
+  text-align: start;
+}
+
+.resources a {
+  margin-top: 20px;
+  color: var(--main-white);
+  font-family: "Heading";
+  font-size: 20px;
+  font-weight: light;
+  line-height: 28px;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-style: italic;
+}
+
 @media only screen and (max-width: 768px) {
   .header {
-    width: 100vw;
-    padding: 25px 15px;
+    width: 100%;
+
+    padding: 10px 12px 0px 12px;
+  }
+
+  .header_logo {
+    width: 80px;
+    height: 80px;
   }
   .header h1 {
     font-size: 22px;
@@ -345,18 +568,25 @@ body {
   .header h2 {
     font-size: 16px;
     white-space: pre;
+    padding: 0px;
   }
-  .header menu {
+
+  .header menu a {
+    font-size: 16px;
+    margin-left: 0px;
+    padding: 9px;
+  }
+  /* .header menu {
     display: none;
-  }
+  } */
   .home {
-    padding: 0 15px;
-    padding-top: 180px;
+    padding: 0px 15px;
+    padding-top: 10px;
   }
   .home > div {
-    flex-direction: row-reverse;
-    justify-content: left;
-    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 98.3vw;
   }
   .home_menu {
     display: none;
@@ -375,18 +605,117 @@ body {
   }
 
   .home .overview {
-    padding: 0 10px;
+    padding: 0px 20px;
+    padding-bottom: 40px;
   }
   .home_menu button {
     font-size: 14px;
   }
   .home .overview p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
-    width: 80vw;
+    width: 100%;
+  }
+  .home .overview h2 {
+    margin-top: 20px;
+    font-size: 26px;
+  }
+  .home .overview a {
+    font-size: 16px;
   }
   .home .overview li {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
+  }
+  .pledge {
+    margin: 0 auto;
+    padding: 0px 15px;
+    padding-bottom: 60px;
+  }
+  .pledge p {
+    background: url("../public/img/Texturelabs_Paper_340XL.jpg");
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: "Body";
+    font-size: 16px;
+    font-weight: light;
+    line-height: 24px;
+    text-underline-offset: 4px;
+    width: 96.5%;
+    color: var(--main-white);
+    padding: 20px 20px;
+    text-align: start;
+  }
+
+  .pledge a {
+    margin-top: 20px;
+    color: var(--main-white);
+    font-family: "Heading";
+    font-size: 16px;
+    font-weight: light;
+    line-height: 28px;
+    text-underline-offset: 4px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-style: italic;
+  }
+  .resources {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0px 15px;
+    padding-bottom: 60px;
+    padding-top: 10px;
+  }
+
+  .resources > div {
+    background: url("../public/img/Texturelabs_Paper_340XL.jpg");
+    background-size: cover;
+    width: 96.5%;
+    padding: 20px 20px;
+    margin: 0 auto;
+  }
+
+  .resources p {
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: "Body";
+    font-size: 16px;
+    font-weight: light;
+    line-height: 24px;
+    text-underline-offset: 4px;
+
+    color: var(--main-white);
+    margin-bottom: 40px;
+    text-align: start;
+  }
+  .resources h3 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: "Heading";
+    font-size: 26px;
+    font-weight: light;
+    line-height: 24px;
+    text-underline-offset: 4px;
+    width: 100%;
+    color: var(--main-white);
+
+    text-align: start;
+  }
+
+  .resources a {
+    margin-top: 20px;
+    color: var(--main-white);
+    font-family: "Heading";
+    font-size: 16px;
+    font-weight: light;
+    line-height: 28px;
+    text-underline-offset: 4px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-style: italic;
   }
 }

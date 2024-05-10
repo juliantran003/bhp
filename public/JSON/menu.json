@@ -4,18 +4,13 @@
     "url": "/"
   },
   {
+    "title": "Pledge",
+
+    "url": "/pledge"
+  },
+  {
     "title": "Resources",
 
     "url": "/resources"
-  },
-  {
-    "title": "Testimonies",
-
-    "url": "/testimonies"
-  },
-  {
-    "title": "Template",
-
-    "url": "/template"
   }
 ]
