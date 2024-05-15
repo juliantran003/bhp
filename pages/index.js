@@ -1,6 +1,8 @@
 // Imports
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Collapse from "@/components/collapse";
+import CollapseText from "@/components/collapseText";
 
 // JSON
 import overview from "../public/JSON/overview.json";
@@ -84,26 +86,31 @@ export default function Home() {
         <div className="overview">
           <h2>OVERVIEW</h2>
           <p>
-            In November 2015{" "}
+            <span className="">PRINT AGAINST APARTHEID</span> is a collective
+            boycott of all HP-branded goods and services in solidarity with
+            Palestinian liberation. <br></br> <br></br>In November 2015{" "}
             <span className="green">The Hewlett-Packard Company (HP)</span>{" "}
             split into two companies, HP Inc. for consumer hardware such as PCs
             and printers, and Hewlett Packard Enterprise (HPE) for enterprise
-            products and services (business and government services).<br></br>{" "}
-            <br></br>Both HP-branded corporations have played key roles in
-            Israeli apartheid, providing services to the Israeli army and
-            police, making them complicit in settler colonialism and the racial
-            segregation of Palestinians.<br></br> <br></br>
-            <span className="title">PRINT AGAINST APARTHEID</span> is a
-            collective boycott of all HP-branded goods and services in
-            solidarity with Palestinian liberation.
+            products and services (business and government services). Both
+            HP-branded corporations have played key roles in Israeli apartheid,
+            providing services to the Israeli army and police, making them
+            complicit in settler colonialism and the racial segregation of
+            Palestinians.
           </p>
           <ul className="overview_menu">
             {overview.map((subject) => {
               return (
-                <li key={subject.title}>
-                  <span>▻ </span>
-                  {subject.title}
-                </li>
+                <Collapse
+                  key={subject.title}
+                  title={subject.title}
+                  content={subject.text}
+                />
+
+                // <li key={subject.title}>
+                //   <span>▻ </span>
+                //   {subject.title}
+                // </li>
               );
             })}
           </ul>
@@ -112,15 +119,20 @@ export default function Home() {
             across the globe and whilst their products serve as day-to-day
             conveniences for many consumers, their technologies form the
             backbone of Israeli apartheid, actively contributing to the ongoing
-            brutalisation and murder of the Palestinian people. <br></br>
-            <br></br>
-            <span className="green white-background">
+            brutalisation and murder of the Palestinian people.
+          </p>
+        </div>
+        <div className="overview">
+          <p>
+            <span className="green">
               We are calling for a total boycott of all HP branded goods and
               services as a result of their involvement in this ethnic cleansing
               campaign. We will not give money to HPE or HP Inc. until they have
               withdrawn their support for the state of Israel.
             </span>
           </p>
+        </div>
+        <div className="overview">
           <h2>IMPACT</h2>
           <p>
             HP branded products and services are deeply intertwined with the
@@ -129,122 +141,156 @@ export default function Home() {
             Israel’s ethnic cleansing of Palestinians.
           </p>
           <ul className="impact_list">
-            <li>
-              Since 7 October 2023 the number of Palestinians imprisoned in
-              Israeli custody has doubled from approximately 5,200 to{" "}
-              <span className="underline">over 10,000.</span>
-            </li>
-            <li>
-              {" "}
-              Palestinians in the West Bank are often processed in{" "}
-              <span className="underline">military courts</span> located inside
-              Israeli military bases, which exist with the function of
-              prosecuting “security violations” and actions regarded as a threat
-              to public order. Hundreds of thousands of Palestinians have been
-              brought before these courts on various charges, including entering
-              Israel without a permit, stone-throwing, and traffic violations,
-              the latter of which constitute upon average 40% of charges per
-              year. Despite military courts being authorised to try anyone who
-              commits an offence in the West Bank, it was decided in the early
-              1980s that Israeli citizens would be tried in the Israeli civilian
-              court system, meaning Israeli defendants are tried and sentenced
-              under Israeli laws, and Palestinian defendants are tried in
-              military courts, whose laws are different from the civilian court
-              system. {}
-              <span className="green">
-                Citizens are tried in different courts under different laws for
-                the same offences, perpetuating a two-tiered citizenship .
-              </span>
-            </li>
-            <li>
-              It is estimated that there are an{" "}
-              <span className="underline">
-                average of 500-700 Palestinian children
-              </span>{" "}
-              held in Israeli military detention each year, with an estimated
-              13,000 mostly arbitrarily detained, interrogated, tried in
-              military courts and imprisoned since 2000.{" "}
-              <span className="underline">A 2020 Save the Children report</span>{" "}
-              that consulted 228 former child detainees from across the West
-              Bank, detained from between one and 18 months, has revealed that
-              86% of Palestinian children detained in Israeli military detention
-              are beaten, 69% percent are strip-searched and 42% are injured at
-              the point of arrest, including sustaining gunshot wounds and
-              broken bones. This same research also found some children have
-              reported{" "}
-              <span className="green">violence of a sexual nature </span>and
-              some have reported being transported between detention centres and
-              court in <span className="green">small cages </span>. Palestinian
-              children are frequently interrogated at unknown locations without
-              the presence of a caregiver, and are often deprived of food, water
-              and sleep, or access to legal counsel, according to the research.
-              The main alleged crime for these detentions is stone throwing,
-              which can carry a 20-year sentence in prison for Palestinian
-              children. This physical and emotional abuse often results in
-              <span className="green">
-                {" "}
-                lifelong psychological trauma and life-altering physical
-                disabilities.
-              </span>
-            </li>
-            <li>
-              {" "}
-              As of the end of October 2023 there was a record high of{" "}
-              <span className="underline">
-                2,070 administrative detainees
-              </span>,{" "}
-              <span className="green">
-                Palestinians held without trial or charge.{" "}
-              </span>
-              Administrative detention is used as a pre-emptive tool against
-              what the state perceives as a potential threat of terrorism or
-              rebellion; in other words, no offence has been committed. As this
-              measure is intended to be preventative, it has no time limit, and
-              the classified nature of the alleged intelligence upon which the
-              detention is imposed means that it is not revealed to detainees
-              why they are being held.{" "}
-              <span className="green">
-                This leaves people who are not charged, tried or convicted,
-                facing unknown allegations with no way to disprove them, not
-                knowing when they will be released.
-              </span>
-            </li>
-            <li>
-              The UN Human Rights Office{" "}
-              <span className="underline">
-                reports receiving first hand testimonies
-              </span>{" "}
-              depicting abuse and humiliation of Palestinians, including
-              “worrying allegations that Palestinian inmates have been{" "}
-              <span className="green">
-                subjected to beatings and abuse by detention guards
-              </span>
-              , with reports of male and female{" "}
-              <span className="green">detainees threatened with rape</span>”.
-              The December 2023 report also expresses concern that “the
-              conditions of Palestinian prisoners in Israeli jails have
-              reportedly deteriorated significantly. Detainees report{" "}
-              <span className="green">
-                severe overcrowding and severely restricted access to basic
-                rights
-              </span>{" "}
-              such as food, water and electricity, medical treatment, family
-              visits and legal aid”.
-            </li>
-            <li>
-              {" "}
-              Since 1967{" "}
-              <span className="underline">over 1,800 military orders</span> have
-              been issued, yet very few have been promptly translated into
-              Arabic, as is required under the Fourth Geneva Convention. Despite
-              this, these military orders control every aspect of Palestinian
-              life, including serving to criminalise all forms of resistance to
-              the Israeli occupation. Many of these orders are written broadly
-              to allow for wide interpretation by the Israeli army, which
-              violates the obligation of states under international human rights
-              law to clearly spell out conduct that could result in criminal
-              sanction.
-            </li>
+            <CollapseText
+              content={
+                <li>
+                  Since 7 October 2023 the number of Palestinians imprisoned in
+                  Israeli custody has doubled from approximately 5,200 to{" "}
+                  <span className="underline">over 10,000.</span>
+                </li>
+              }
+            />
+            <CollapseText
+              content={
+                <li>
+                  {" "}
+                  Palestinians in the West Bank are often processed in{" "}
+                  <span className="underline">military courts</span> located
+                  inside Israeli military bases, which exist with the function
+                  of prosecuting “security violations” and actions regarded as a
+                  threat to public order. Hundreds of thousands of Palestinians
+                  have been brought before these courts on various charges,
+                  including entering Israel without a permit, stone-throwing,
+                  and traffic violations, the latter of which constitute upon
+                  average 40% of charges per year. Despite military courts being
+                  authorised to try anyone who commits an offence in the West
+                  Bank, it was decided in the early 1980s that Israeli citizens
+                  would be tried in the Israeli civilian court system, meaning
+                  Israeli defendants are tried and sentenced under Israeli laws,
+                  and Palestinian defendants are tried in military courts, whose
+                  laws are different from the civilian court system. {}
+                  <span className="green">
+                    Citizens are tried in different courts under different laws
+                    for the same offences, perpetuating a two-tiered citizenship
+                    .
+                  </span>
+                </li>
+              }
+            />
+
+            <CollapseText
+              content={
+                <li>
+                  It is estimated that there are an{" "}
+                  <span className="underline">
+                    average of 500-700 Palestinian children
+                  </span>{" "}
+                  held in Israeli military detention each year, with an
+                  estimated 13,000 mostly arbitrarily detained, interrogated,
+                  tried in military courts and imprisoned since 2000.{" "}
+                  <span className="underline">
+                    A 2020 Save the Children report
+                  </span>{" "}
+                  that consulted 228 former child detainees from across the West
+                  Bank, detained from between one and 18 months, has revealed
+                  that 86% of Palestinian children detained in Israeli military
+                  detention are beaten, 69% percent are strip-searched and 42%
+                  are injured at the point of arrest, including sustaining
+                  gunshot wounds and broken bones. This same research also found
+                  some children have reported{" "}
+                  <span className="green">violence of a sexual nature </span>and
+                  some have reported being transported between detention centres
+                  and court in <span className="green">small cages </span>.
+                  Palestinian children are frequently interrogated at unknown
+                  locations without the presence of a caregiver, and are often
+                  deprived of food, water and sleep, or access to legal counsel,
+                  according to the research. The main alleged crime for these
+                  detentions is stone throwing, which can carry a 20-year
+                  sentence in prison for Palestinian children. This physical and
+                  emotional abuse often results in
+                  <span className="green">
+                    {" "}
+                    lifelong psychological trauma and life-altering physical
+                    disabilities.
+                  </span>
+                </li>
+              }
+            />
+
+            <CollapseText
+              content={
+                <li>
+                  {" "}
+                  As of the end of October 2023 there was a record high of{" "}
+                  <span className="underline">
+                    2,070 administrative detainees
+                  </span>
+                  ,{" "}
+                  <span className="green">
+                    Palestinians held without trial or charge.{" "}
+                  </span>
+                  Administrative detention is used as a pre-emptive tool against
+                  what the state perceives as a potential threat of terrorism or
+                  rebellion; in other words, no offence has been committed. As
+                  this measure is intended to be preventative, it has no time
+                  limit, and the classified nature of the alleged intelligence
+                  upon which the detention is imposed means that it is not
+                  revealed to detainees why they are being held.{" "}
+                  <span className="green">
+                    This leaves people who are not charged, tried or convicted,
+                    facing unknown allegations with no way to disprove them, not
+                    knowing when they will be released.
+                  </span>
+                </li>
+              }
+            />
+            <CollapseText
+              content={
+                <li>
+                  The UN Human Rights Office{" "}
+                  <span className="underline">
+                    reports receiving first hand testimonies
+                  </span>{" "}
+                  depicting abuse and humiliation of Palestinians, including
+                  “worrying allegations that Palestinian inmates have been{" "}
+                  <span className="green">
+                    subjected to beatings and abuse by detention guards
+                  </span>
+                  , with reports of male and female{" "}
+                  <span className="green">detainees threatened with rape</span>
+                  ”. The December 2023 report also expresses concern that “the
+                  conditions of Palestinian prisoners in Israeli jails have
+                  reportedly deteriorated significantly. Detainees report{" "}
+                  <span className="green">
+                    severe overcrowding and severely restricted access to basic
+                    rights
+                  </span>{" "}
+                  such as food, water and electricity, medical treatment, family
+                  visits and legal aid”.
+                </li>
+              }
+            />
+            <CollapseText
+              content={
+                <li>
+                  {" "}
+                  Since 1967{" "}
+                  <span className="underline">
+                    over 1,800 military orders
+                  </span>{" "}
+                  have been issued, yet very few have been promptly translated
+                  into Arabic, as is required under the Fourth Geneva
+                  Convention. Despite this, these military orders control every
+                  aspect of Palestinian life, including serving to criminalise
+                  all forms of resistance to the Israeli occupation. Many of
+                  these orders are written broadly to allow for wide
+                  interpretation by the Israeli army, which violates the
+                  obligation of states under international human rights law to
+                  clearly spell out conduct that could result in criminal
+                  sanction.
+                </li>
+              }
+            />
           </ul>
           <p className="underline">Examples of Israeli Military Orders: </p>
           <p>
@@ -276,6 +322,9 @@ export default function Home() {
             illegal to display the Palestinian flag, it is strongly and often
             violently repressed.
           </p>
+        </div>
+
+        <div className="overview">
           <ul className="impact_list">
             <li>
               {" "}
@@ -335,6 +384,8 @@ export default function Home() {
             </li>
           </ul>
           <p className="italic">(Statistics up-to-date as of 04/12/23)</p>
+        </div>
+        <div className="overview">
           <h2>COMPLICITY</h2>
           <p>
             With the support of multinational corporations such as HP, Israel

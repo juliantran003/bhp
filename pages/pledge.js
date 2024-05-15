@@ -44,13 +44,12 @@ export default function Pledge() {
         <br></br>
         <span className="green">
           I pledge to tell others about the consequences of supporting HP
-          branded products:
+          branded products:<br></br>
+          <br></br>
         </span>{" "}
         This can look like talking to friends, family, colleagues, peers,
-        educators, students, neighbours. You can begin these conversations
-        online via email, text, social media or in person using the{" "}
-        <span className="green">conversation tools</span>, which can be found on
-        our <a href="">website</a> and on our <a href="">social media</a>.
+        educators, students, neighbours.
+        <br></br>
       </p>
     </div>
   );

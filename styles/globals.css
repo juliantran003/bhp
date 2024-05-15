@@ -152,6 +152,11 @@ body {
   z-index: 2;
 }
 
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
 .header_title {
   display: flex;
   align-items: flex-start;
@@ -161,14 +166,13 @@ body {
 
 .header h1 {
   cursor: pointer;
-  background: url("../public/img/black-texture.png");
-  background-size: cover;
-  font-family: "Zurich";
-  font-size: 30px;
-  margin-bottom: 15px;
+  margin-left: 5px;
+  font-family: "Title";
+  font-size: 20px;
+
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: var(--main-white);
 }
 .header h2 {
   line-height: 24px;
@@ -214,6 +218,69 @@ body {
   height: 100px;
 }
 
+/* FOOTER */
+
+.footer {
+  width: 100vw;
+  background-color: var(--main-black);
+  color: var(--main-white);
+  font-family: "Body";
+  font-size: 18px;
+}
+
+.footer > div {
+  max-width: 1440px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.footer h1 {
+  font-family: "Title";
+  font-size: 22px;
+}
+
+.footer .socials {
+  font-family: "Body";
+  margin-left: 30px;
+  color: var(--main-white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.links > div {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.icon_container {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.footer p {
+  font-style: italic;
+  display: flex;
+}
+
+.dinamo {
+  font-family: "Body";
+  color: var(--main-white);
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
 /* Home */
 
 .home {
@@ -225,18 +292,21 @@ body {
 }
 
 .home .overview {
-  padding: 0px 60px;
+  padding: 20px 60px;
   background: url("../public/img/Texturelabs_Paper_340XL.jpg");
-  background-size: contain;
-
-  padding-bottom: 60px;
+  background-size: cover;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .home .overview h2 {
-  margin-top: 40px;
+  /* background: url("../public/img/Texturelabs_Paper_340XL.jpg");
+  background-size: contain; */
+  margin-top: 20px;
+  margin-bottom: 30px;
   position: relative;
   font-family: "Heading";
-  font-size: 30px;
+  font-size: 36px;
   text-transform: uppercase;
   font-weight: light;
   /* background: url("../public/img/black-texture.png");
@@ -267,7 +337,7 @@ body {
   /* text-transform: uppercase; */
   margin-top: 20px;
   font-family: "Body";
-  font-size: 20px;
+  font-size: 22px;
   font-weight: light;
   line-height: 24px;
   text-underline-offset: 4px;
@@ -297,7 +367,7 @@ body {
   font-weight: light;
   line-height: 28px;
   text-underline-offset: 4px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   list-style-type: none;
   list-style-position: inside;
   cursor: pointer;
@@ -305,7 +375,7 @@ body {
 
 .home > div {
   display: flex;
-
+  flex-direction: column;
   margin: 0 auto;
   width: 89.5%;
   margin-bottom: 100px;
@@ -346,21 +416,22 @@ body {
 }
 
 .impact_list {
-  margin-top: 20px;
+  margin-top: 10px;
   color: var(--main-white);
   font-family: "Body";
-  font-size: 18px;
+  font-size: 22px;
   font-weight: light;
   line-height: 28px;
   text-underline-offset: 4px;
   width: 100%;
-  list-style-type: disc;
-  list-style-position: outside;
+  list-style-type: none;
+  list-style-position: inside;
+  margin-bottom: 30px;
 }
 .impact_list li {
-  margin-top: 20px;
-  margin-left: 20px;
-  list-style-position: outside;
+  margin-top: 10px;
+
+  list-style-position: inside;
 }
 .impact_list a {
   margin-top: 20px;
@@ -548,6 +619,64 @@ body {
   text-decoration: underline;
   cursor: pointer;
   font-style: italic;
+}
+
+/* COLLAPSE */
+
+.collapsible_arrow {
+  font-size: 12px;
+  margin-right: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.collapsible h3 {
+  cursor: pointer;
+  text-decoration: none;
+  text-align: start;
+  padding: 0px;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+.collapsible_title {
+  text-decoration: underline;
+  font-size: 22px;
+}
+.collapsible p {
+  font-size: 10px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  /* font-style: italic; */
+  font-family: "Body";
+}
+
+.collapsibleText {
+  display: flex;
+  align-items: baseline;
+}
+.collapsedText {
+  display: flex;
+  align-items: baseline;
+}
+
+.collapsibleText > li {
+  margin-left: 10px;
+}
+.collapsedText > li {
+  margin-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 73vw;
+}
+.readMore {
+  white-space: nowrap;
+  font-family: "Body";
+  font-size: 18px;
+  font-weight: light;
+  text-decoration: underline;
+  font-style: italic;
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 768px) {
