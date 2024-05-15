@@ -222,7 +222,9 @@ body {
 
 .footer {
   width: 100vw;
-  background-color: var(--main-black);
+  /* background-color: var(--main-black); */
+  background: url("../public/img/Texturelabs_Paper_340XL.jpg");
+  background-size: cover;
   color: var(--main-white);
   font-family: "Body";
   font-size: 18px;
