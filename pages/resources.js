@@ -1,10 +1,18 @@
 import resources from "../public/JSON/resourcesUse.json";
 import resourcesNot from "../public/JSON/resourcesDontUse.json";
 import further from "../public/JSON/furtherReading.json";
+import Metadata from "@/components/metadata";
 
 export default function Resources() {
   return (
     <div className="resources">
+      <Metadata
+        title="Print Against Apartheid - Resources"
+        description={`The HP Indigo is a commonly used commercial digital printer. Below we have compiled a list of printing companies, split into those who do and those who do not use HP printers.
+
+        Printing companies continually update and change the technology they use, so it is worth emailing to ask which 'press' your project will be printed on. Companies are generally very happy to share this information with their customers, so do not feel worried about asking for clarification. It is your right and your responsibility to be informed about the ways your products are produced.`}
+        tags="Print Against Apartheid, Hewlett-Packard Company (HP)"
+      />
       <div>
         {" "}
         <h3>Printing</h3>

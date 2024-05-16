@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Collapse from "@/components/collapse";
 import CollapseText from "@/components/collapseText";
+import Metadata from "@/components/metadata";
 
 // JSON
 import overview from "../public/JSON/overview.json";
@@ -22,6 +23,13 @@ export default function Home() {
 
   return (
     <div className="home">
+      <Metadata
+        title="Print Against Apartheid - Statement"
+        description={`PRINT AGAINST APARTHEID is a collective boycott of all HP-branded goods and services in solidarity with Palestinian liberation.
+
+        In November 2015 The Hewlett-Packard Company (HP) split into two companies, HP Inc. for consumer hardware such as PCs and printers, and Hewlett Packard Enterprise (HPE) for enterprise products and services (business and government services). Both HP-branded corporations have played key roles in Israeli apartheid, providing services to the Israeli army and police, making them complicit in settler colonialism and the racial segregation of Palestinians.`}
+        tags="Print Against Apartheid, Hewlett-Packard Company (HP)"
+      />
       <div>
         {/* <div className="home_menu">
           <button className={main === "overview" ? "clicked" : ""}>

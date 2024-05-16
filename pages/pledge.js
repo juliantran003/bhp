@@ -1,6 +1,16 @@
+import Metadata from "@/components/metadata";
+
 export default function Pledge() {
   return (
     <div className="pledge">
+      <Metadata
+        title="Print Against Apartheid - Pledge"
+        description={`      Whether you are an artist, publisher, student, educator, organiser,
+        curator, or just a friend of Palestine – we need your solidarity. We ask
+        you to join our collective boycott of HP branded products and services,
+        in line with BDS and PACBI guidelines.`}
+        tags="Print Against Apartheid, Hewlett-Packard Company (HP)"
+      />
       <p>
         Whether you are an artist, publisher, student, educator, organiser,
         curator, or just a friend of Palestine – we need your solidarity. We ask
