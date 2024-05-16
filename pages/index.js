@@ -177,7 +177,6 @@ export default function Home() {
                 </li>
               }
             />
-
             <CollapseText
               content={
                 <li>
@@ -216,7 +215,6 @@ export default function Home() {
                 </li>
               }
             />
-
             <CollapseText
               content={
                 <li>
@@ -287,99 +285,120 @@ export default function Home() {
                   interpretation by the Israeli army, which violates the
                   obligation of states under international human rights law to
                   clearly spell out conduct that could result in criminal
-                  sanction.
+                  sanction.<br></br>
+                  <p className="underline">
+                    Examples of Israeli Military Orders:{" "}
+                  </p>
+                  <p>
+                    <span className="green"> Military Order No. 101</span>{" "}
+                    criminalises non-violent political expression, such as
+                    singing a hymn or sounding a slogan, and labels such
+                    activities as “terrorism”.<br></br>
+                    <span className="green">
+                      {" "}
+                      Military Orders 811 and 847
+                    </span>{" "}
+                    allow Israelis to use "powers of attorney" to purchase land
+                    from unwilling Palestinian sellers.
+                    <br></br>
+                    <span className="green"> Military Order No. 537</span>{" "}
+                    removes democratically elected Mayors of West Bank cities
+                    from their position.<br></br>
+                    <span className="green"> Military Order No. 854</span> was
+                    established to control the admissions of academic
+                    institutions in the West Bank. Under 854, the military has
+                    complete control over who can enter colleges as students,
+                    teachers, or administrators. All students must obtain
+                    identification issued by the Area Commander prior to
+                    registration.<br></br>
+                    <span className="green"> Military Order No. 998</span>{" "}
+                    Palestinians are required to obtain Israeli military
+                    authorisation to withdraw from bank accounts. <br></br>
+                    <span className="green">
+                      {" "}
+                      Military Order 93 and Amendment
+                    </span>{" "}
+                    grants all Palestinian insurance operations to the Israeli
+                    Insurance Syndicate. <br></br>
+                    <span className="green"> Military Order No. 128</span> gives
+                    the Israeli military the right to take over Palestinian
+                    businesses that are not open during normal business hours.
+                    Whilst it is no longer illegal to display the Palestinian
+                    flag, it is strongly and often violently repressed.
+                  </p>{" "}
                 </li>
               }
             />
-          </ul>
-          <p className="underline">Examples of Israeli Military Orders: </p>
-          <p>
-            <span className="green"> Military Order No. 101</span> criminalises
-            non-violent political expression, such as singing a hymn or sounding
-            a slogan, and labels such activities as “terrorism”.<br></br>
-            <span className="green"> Military Orders 811 and 847</span> allow
-            Israelis to use "powers of attorney" to purchase land from unwilling
-            Palestinian sellers.
-            <br></br>
-            <span className="green"> Military Order No. 537</span> removes
-            democratically elected Mayors of West Bank cities from their
-            position.<br></br>
-            <span className="green"> Military Order No. 854</span> was
-            established to control the admissions of academic institutions in
-            the West Bank. Under 854, the military has complete control over who
-            can enter colleges as students, teachers, or administrators. All
-            students must obtain identification issued by the Area Commander
-            prior to registration.<br></br>
-            <span className="green"> Military Order No. 998</span> Palestinians
-            are required to obtain Israeli military authorisation to withdraw
-            from bank accounts. <br></br>
-            <span className="green"> Military Order 93 and Amendment</span>{" "}
-            grants all Palestinian insurance operations to the Israeli Insurance
-            Syndicate. <br></br>
-            <span className="green"> Military Order No. 128</span> gives the
-            Israeli military the right to take over Palestinian businesses that
-            are not open during normal business hours. Whilst it is no longer
-            illegal to display the Palestinian flag, it is strongly and often
-            violently repressed.
-          </p>{" "}
-          <ul className="impact_list">
-            <li>
-              {" "}
-              One in every five Palestinians have been arrested and charged
-              under military orders, an incarceration rate that doubles to{" "}
-              <span className="underline">
-                two in every five Palestinian men having been arrested
-              </span>
-              . For comparison, just over{" "}
-              <span className="underline">one in two hundred</span> citizens in
-              the USA have been arrested.
-            </li>
-            <li>
-              The United Nations Special Rapporteur said the Occupied
-              Palestinian Territories had been “transformed as a whole into a
-              constantly surveilled open-air prison. The occupying power framed
-              the Palestinians as a collective incarcerable security threat,
-              ultimately de-civilianising them, namely eroding their status as
-              protected persons”. (
-              <a
-                href="https://www.ohchr.org/en/news/
+            <CollapseText
+              content={
+                <li>
+                  {" "}
+                  One in every five Palestinians have been arrested and charged
+                  under military orders, an incarceration rate that doubles to{" "}
+                  <span className="underline">
+                    two in every five Palestinian men having been arrested
+                  </span>
+                  . For comparison, just over{" "}
+                  <span className="underline">one in two hundred</span> citizens
+                  in the USA have been arrested.
+                </li>
+              }
+            />{" "}
+            <CollapseText
+              content={
+                <li>
+                  The United Nations Special Rapporteur said the Occupied
+                  Palestinian Territories had been “transformed as a whole into
+                  a constantly surveilled open-air prison. The occupying power
+                  framed the Palestinians as a collective incarcerable security
+                  threat, ultimately de-civilianising them, namely eroding their
+                  status as protected persons”. (
+                  <a
+                    href="https://www.ohchr.org/en/news/
                 2023/07/special-rapporteur-says-israels-unlawful-carceral-practices-occupied-palestinian"
-                target="_blank"
-              >
-                Source
-              </a>
-              )
-            </li>
-            <li>
-              <br></br>
-              Israel’s control over the Palestinian population is based on a
-              <span className="underline">
-                system of colour-coded identification cards
-              </span>
-              , with Palestinians in the{" "}
-              <span className="underline">West Bank</span> and the Gaza Strip
-              issued with green ID cards and Palestinians in{" "}
-              <span className="underline">East Jerusalem</span> and Israel given
-              blue ID cards. It is illegal for Palestinians in the occupied West
-              Bank to travel to Gaza and Jerusalem and for Palestinians in Gaza
-              to travel to Jerusalem and the West Bank, unless they are issued a
-              special permit by the Israeli military.{" "}
-              <span className="underline">
-                Israel has refused to add many people living in Gaza
-              </span>{" "}
-              to the population registry altogether, and despite the right to
-              return being enshrined in UN resolutions, there are nearly{" "}
-              <span className="underline">
-                six million Palestinian refugees
-              </span>{" "}
-              in the diaspora, most living in camps and communities in the West
-              Bank, Gaza, Lebanon, Syria and Jordan, who cannot return to the
-              territories under Israeli control. This control over population
-              demographics and freedom of movement within the Occupied
-              Palestinian Territories lies at the core of Israeli occupation and
-              has drawn comparisons to South African apartheid, during which ID
-              cards were used to control the movement of Black citizens.
-            </li>
+                    target="_blank"
+                  >
+                    Source
+                  </a>
+                  )
+                </li>
+              }
+            />
+            <CollapseText
+              content={
+                <li>
+                  Israel’s control over the Palestinian population is based on a{" "}
+                  <span className="underline">
+                    system of colour-coded identification cards
+                  </span>
+                  , with Palestinians in the{" "}
+                  <span className="underline">West Bank</span> and the Gaza
+                  Strip issued with green ID cards and Palestinians in{" "}
+                  <span className="underline">East Jerusalem</span> and Israel
+                  given blue ID cards. It is illegal for Palestinians in the
+                  occupied West Bank to travel to Gaza and Jerusalem and for
+                  Palestinians in Gaza to travel to Jerusalem and the West Bank,
+                  unless they are issued a special permit by the Israeli
+                  military.{" "}
+                  <span className="underline">
+                    Israel has refused to add many people living in Gaza
+                  </span>{" "}
+                  to the population registry altogether, and despite the right
+                  to return being enshrined in UN resolutions, there are nearly{" "}
+                  <span className="underline">
+                    six million Palestinian refugees
+                  </span>{" "}
+                  in the diaspora, most living in camps and communities in the
+                  West Bank, Gaza, Lebanon, Syria and Jordan, who cannot return
+                  to the territories under Israeli control. This control over
+                  population demographics and freedom of movement within the
+                  Occupied Palestinian Territories lies at the core of Israeli
+                  occupation and has drawn comparisons to South African
+                  apartheid, during which ID cards were used to control the
+                  movement of Black citizens.
+                </li>
+              }
+            />
           </ul>
         </div>
 

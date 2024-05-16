@@ -30,17 +30,17 @@ export default function Pledge() {
         your work, that you have committed to an HP- free practice. It is
         reasonable to ask for transparency surrounding the way your work is
         reproduced and it is reasonable to ask for receipts. You can find an
-        ongoing list of commercial printers <a href="">here </a> who don’t use
-        HP printers or inks. <br></br>
+        ongoing list of commercial printers <a href="/resources">here </a> who
+        don’t use HP printers or inks. <br></br>
         <br></br> As a publisher, this looks like ensuring that nothing printed
         under your press is done so on an HP printer or using HP ink. If you are
         printing books digitally there are many alternatives to the well known
         HP Indigo, you can find a list of commercial printers who do not use an
-        HP Indigo <a href="">here </a>. If you are a publisher who does not
-        currently use HP to print your books, you should be vigilant that you
-        are not using HP for other printed matter, be that in your office,
-        posters for book launches, inserts for books, slipcases, greetings
-        cards, etc. <br></br>
+        HP Indigo <a href="/resources">here </a>. If you are a publisher who
+        does not currently use HP to print your books, you should be vigilant
+        that you are not using HP for other printed matter, be that in your
+        office, posters for book launches, inserts for books, slipcases,
+        greetings cards, etc. <br></br>
         <br></br>
         <span className="green">
           I pledge to tell others about the consequences of supporting HP

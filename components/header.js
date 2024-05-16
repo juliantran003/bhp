@@ -9,7 +9,7 @@ import logo from "../public/img/PAA logo_cream.svg";
 
 export default function Header() {
   const router = useRouter();
-  console.log(router.path);
+
   return (
     <header className="header">
       <div className="header_container">
