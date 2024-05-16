@@ -146,7 +146,12 @@ export default function Home() {
                 <li>
                   Since 7 October 2023 the number of Palestinians imprisoned in
                   Israeli custody has doubled from approximately 5,200 to{" "}
-                  <span className="underline">over 10,000.</span>
+                  <a
+                    href="https://www.aljazeera.com/features/2023/10/21/number-of-palestinian-prisoners-in-israel-doubles-to-10000-in-two-weeks"
+                    target="_blank"
+                  >
+                    over 10,000.
+                  </a>
                 </li>
               }
             />
@@ -155,20 +160,26 @@ export default function Home() {
                 <li>
                   {" "}
                   Palestinians in the West Bank are often processed in{" "}
-                  <span className="underline">military courts</span> located
-                  inside Israeli military bases, which exist with the function
-                  of prosecuting “security violations” and actions regarded as a
-                  threat to public order. Hundreds of thousands of Palestinians
-                  have been brought before these courts on various charges,
-                  including entering Israel without a permit, stone-throwing,
-                  and traffic violations, the latter of which constitute upon
-                  average 40% of charges per year. Despite military courts being
-                  authorised to try anyone who commits an offence in the West
-                  Bank, it was decided in the early 1980s that Israeli citizens
-                  would be tried in the Israeli civilian court system, meaning
-                  Israeli defendants are tried and sentenced under Israeli laws,
-                  and Palestinian defendants are tried in military courts, whose
-                  laws are different from the civilian court system. {}
+                  <a
+                    href="https://www.btselem.org/military_courts"
+                    target="_blank"
+                  >
+                    military courts
+                  </a>{" "}
+                  located inside Israeli military bases, which exist with the
+                  function of prosecuting “security violations” and actions
+                  regarded as a threat to public order. Hundreds of thousands of
+                  Palestinians have been brought before these courts on various
+                  charges, including entering Israel without a permit,
+                  stone-throwing, and traffic violations, the latter of which
+                  constitute upon average 40% of charges per year. Despite
+                  military courts being authorised to try anyone who commits an
+                  offence in the West Bank, it was decided in the early 1980s
+                  that Israeli citizens would be tried in the Israeli civilian
+                  court system, meaning Israeli defendants are tried and
+                  sentenced under Israeli laws, and Palestinian defendants are
+                  tried in military courts, whose laws are different from the
+                  civilian court system. {}
                   <span className="green">
                     Citizens are tried in different courts under different laws
                     for the same offences, perpetuating a two-tiered citizenship
@@ -181,15 +192,21 @@ export default function Home() {
               content={
                 <li>
                   It is estimated that there are an{" "}
-                  <span className="underline">
+                  <a
+                    href="https://www.ohchr.org/en/press-releases/2023/10/unchilded-birth-un-expert-calls-decisive-protection-palestinian-children#:~:text=An%20average%20of%20500-700,courts%20and%20imprisoned%20since%202000."
+                    target="_blank"
+                  >
                     average of 500-700 Palestinian children
-                  </span>{" "}
+                  </a>{" "}
                   held in Israeli military detention each year, with an
                   estimated 13,000 mostly arbitrarily detained, interrogated,
                   tried in military courts and imprisoned since 2000.{" "}
-                  <span className="underline">
+                  <a
+                    href="https://www.savethechildren.org.uk/news/media-centre/press-releases/new-research-reveals-ongoing-violence-on-palestinian-children--"
+                    target="_blank"
+                  >
                     A 2020 Save the Children report
-                  </span>{" "}
+                  </a>{" "}
                   that consulted 228 former child detainees from across the West
                   Bank, detained from between one and 18 months, has revealed
                   that 86% of Palestinian children detained in Israeli military
@@ -220,9 +237,12 @@ export default function Home() {
                 <li>
                   {" "}
                   As of the end of October 2023 there was a record high of{" "}
-                  <span className="underline">
+                  <a
+                    target="_blank"
+                    href="https://reliefweb.int/report/occupied-palestinian-territory/un-human-rights-office-opt-dramatic-rise-detention-palestinians-across-occupied-west-bank#:~:text=The%20number%20of%20Palestinians%20in,imprisonment%20is%20also%20deeply%20disturbing."
+                  >
                     2,070 administrative detainees
-                  </span>
+                  </a>
                   ,{" "}
                   <span className="green">
                     Palestinians held without trial or charge.{" "}
@@ -246,9 +266,12 @@ export default function Home() {
               content={
                 <li>
                   The UN Human Rights Office{" "}
-                  <span className="underline">
+                  <a
+                    target="_blank"
+                    href="https://reliefweb.int/report/occupied-palestinian-territory/un-human-rights-office-opt-dramatic-rise-detention-palestinians-across-occupied-west-bank#:~:text=The%20number%20of%20Palestinians%20in,imprisonment%20is%20also%20deeply%20disturbing."
+                  >
                     reports receiving first hand testimonies
-                  </span>{" "}
+                  </a>{" "}
                   depicting abuse and humiliation of Palestinians, including
                   “worrying allegations that Palestinian inmates have been{" "}
                   <span className="green">
@@ -273,9 +296,12 @@ export default function Home() {
                 <li>
                   {" "}
                   Since 1967{" "}
-                  <span className="underline">
+                  <a
+                    target="_blank"
+                    href="https://www.militarycourtwatch.org/page.php?id=SNHdhRow9Pa30432AKJqGwVetO9"
+                  >
                     over 1,800 military orders
-                  </span>{" "}
+                  </a>{" "}
                   have been issued, yet very few have been promptly translated
                   into Arabic, as is required under the Fourth Geneva
                   Convention. Despite this, these military orders control every
@@ -286,14 +312,30 @@ export default function Home() {
                   obligation of states under international human rights law to
                   clearly spell out conduct that could result in criminal
                   sanction.<br></br>
-                  <p className="underline">
+                  <br></br>
+                  <a
+                    target="_blank"
+                    href="https://academic-accelerator.com/encyclopedia/israeli-military-order"
+                  >
                     Examples of Israeli Military Orders:{" "}
-                  </p>
+                  </a>
                   <p>
-                    <span className="green"> Military Order No. 101</span>{" "}
+                    <a
+                      href="https://www.btselem.org/download/19670827_order_regarding_prohibition_of_incitement_and_hostile_propaganda.pdf"
+                      target="_blank"
+                    >
+                      {" "}
+                      <span className="green"> Military Order No. 101</span>
+                    </a>{" "}
                     criminalises non-violent political expression, such as
-                    singing a hymn or sounding a slogan, and labels such
-                    activities as “terrorism”.<br></br>
+                    <a
+                      href="https://www.hrw.org/report/2019/12/17/born-without-civil-rights/israels-use-draconian-military-orders-repress"
+                      target="_blank"
+                    >
+                      {" "}
+                      singing a hymn or sounding a slogan
+                    </a>
+                    , and labels such activities as “terrorism”.<br></br>
                     <span className="green">
                       {" "}
                       Military Orders 811 and 847
@@ -324,7 +366,14 @@ export default function Home() {
                     the Israeli military the right to take over Palestinian
                     businesses that are not open during normal business hours.
                     Whilst it is no longer illegal to display the Palestinian
-                    flag, it is strongly and often violently repressed.
+                    flag, it is{" "}
+                    <a
+                      target="_blank"
+                      href="https://www.nytimes.com/2022/07/30/world/middleeast/palestinian-flag-attack-israel.html"
+                    >
+                      strongly and often violently repressed
+                    </a>
+                    .
                   </p>{" "}
                 </li>
               }
@@ -335,12 +384,20 @@ export default function Home() {
                   {" "}
                   One in every five Palestinians have been arrested and charged
                   under military orders, an incarceration rate that doubles to{" "}
-                  <span className="underline">
+                  <a
+                    target="_blank"
+                    href="https://www.aljazeera.com/news/2023/10/8/why-are-so-many-palestinian-prisoners-in-israeli-jails"
+                  >
                     two in every five Palestinian men having been arrested
-                  </span>
+                  </a>
                   . For comparison, just over{" "}
-                  <span className="underline">one in two hundred</span> citizens
-                  in the USA have been arrested.
+                  <a
+                    target="_blank"
+                    href="https://www.statista.com/statistics/191267/arrest-rate-for-all-offenses-in-the-us-since-1990/#:~:text=In%202022,%20the%20arrest%20rate,per%20100,000%20of%20the%20population."
+                  >
+                    one in two hundred
+                  </a>{" "}
+                  citizens in the USA have been arrested.
                 </li>
               }
             />{" "}
@@ -354,8 +411,7 @@ export default function Home() {
                   threat, ultimately de-civilianising them, namely eroding their
                   status as protected persons”. (
                   <a
-                    href="https://www.ohchr.org/en/news/
-                2023/07/special-rapporteur-says-israels-unlawful-carceral-practices-occupied-palestinian"
+                    href="https://www.ohchr.org/en/news/2023/07/special-rapporteur-says-israels-unlawful-carceral-practices-occupied-palestinian#:~:text=Human%20Rights%20Council-,Special%20Rapporteur%20Says%20Israel's%20Unlawful%20Carceral%20Practices%20in%20the%20Occupied,into%20an%20Open%2DAir%20Prison."
                     target="_blank"
                   >
                     Source
@@ -368,26 +424,46 @@ export default function Home() {
               content={
                 <li>
                   Israel’s control over the Palestinian population is based on a{" "}
-                  <span className="underline">
+                  <a
+                    target="_blank"
+                    href="https://www.aljazeera.com/news/2017/11/18/the-colour-coded-israeli-id-system-for-palestinians"
+                  >
                     system of colour-coded identification cards
-                  </span>
+                  </a>
                   , with Palestinians in the{" "}
-                  <span className="underline">West Bank</span> and the Gaza
-                  Strip issued with green ID cards and Palestinians in{" "}
-                  <span className="underline">East Jerusalem</span> and Israel
-                  given blue ID cards. It is illegal for Palestinians in the
-                  occupied West Bank to travel to Gaza and Jerusalem and for
-                  Palestinians in Gaza to travel to Jerusalem and the West Bank,
-                  unless they are issued a special permit by the Israeli
+                  <a
+                    target="_blank"
+                    href="http://www.aljazeera.com/topics/subjects/occupied-west-bank.html"
+                  >
+                    West Bank
+                  </a>{" "}
+                  and the Gaza Strip issued with green ID cards and Palestinians
+                  in{" "}
+                  <a
+                    target="_blank"
+                    href="http://www.aljazeera.com/topics/subjects/east-jerusalem.html"
+                  >
+                    East Jerusalem
+                  </a>{" "}
+                  and Israel given blue ID cards. It is illegal for Palestinians
+                  in the occupied West Bank to travel to Gaza and Jerusalem and
+                  for Palestinians in Gaza to travel to Jerusalem and the West
+                  Bank, unless they are issued a special permit by the Israeli
                   military.{" "}
-                  <span className="underline">
+                  <a
+                    target="_blank"
+                    href="https://www.hrw.org/report/2021/04/27/threshold-crossed/israeli-authorities-and-crimes-apartheid-and-persecution#_ftn792"
+                  >
                     Israel has refused to add many people living in Gaza
-                  </span>{" "}
+                  </a>{" "}
                   to the population registry altogether, and despite the right
                   to return being enshrined in UN resolutions, there are nearly{" "}
-                  <span className="underline">
+                  <a
+                    target="_blank"
+                    href="https://apnews.com/article/palestinian-jordan-egypt-israel-refugee-502c06d004767d4b64848d878b66bd3d"
+                  >
                     six million Palestinian refugees
-                  </span>{" "}
+                  </a>{" "}
                   in the diaspora, most living in camps and communities in the
                   West Bank, Gaza, Lebanon, Syria and Jordan, who cannot return
                   to the territories under Israeli control. This control over

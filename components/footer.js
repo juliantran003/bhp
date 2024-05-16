@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
           <p>
             Thank you to{" "}
-            <a href="https://abcdinamo.com/" className="dinamo">
+            <a target="_blank" href="https://abcdinamo.com/" className="dinamo">
               {" "}
               Dinamo Typefaces{" "}
             </a>{" "}

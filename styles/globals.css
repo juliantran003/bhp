@@ -118,7 +118,7 @@ body {
 }
 .underline {
   position: relative;
-  text-decoration: underline 1px;
+  text-decoration: underline 2px;
 }
 .bold {
   position: relative;
@@ -374,6 +374,23 @@ body {
   list-style-position: inside;
   cursor: pointer;
 }
+.home .overview_menu a {
+  /* background: url("../public/img/black-texture.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text; */
+  /* text-transform: uppercase; */
+  color: var(--main-white);
+  font-family: "Body";
+  font-size: 22px;
+  font-weight: light;
+  line-height: 28px;
+  text-underline-offset: 4px;
+  /* text-decoration: underline; */
+  list-style-type: none;
+  list-style-position: inside;
+  cursor: pointer;
+}
 
 .home > div {
   display: flex;
@@ -438,14 +455,14 @@ body {
 .impact_list a {
   margin-top: 20px;
   color: var(--main-white);
-  font-family: "Heading";
-  font-size: 20px;
+  font-family: "Body";
+  font-size: 22px;
   font-weight: light;
   line-height: 28px;
   text-underline-offset: 4px;
   text-decoration: underline;
   cursor: pointer;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .italic {
@@ -650,6 +667,7 @@ body {
   margin-bottom: 20px;
   /* font-style: italic; */
   font-family: "Body";
+  font-size: 22px;
 }
 
 .collapsibleText {
