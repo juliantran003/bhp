@@ -24,19 +24,19 @@ export default function Footer() {
               href="mailto:printagainstapartheid@proton.me"
               className="socials"
             >
-              <div className="icon_container">
+              {/* <div className="icon_container">
                 <Image src={mail} alt="mail" fill />
-              </div>
-              printagainstapartheid@proton.me
+              </div> */}
+              Email : printagainstapartheid@proton.me
             </a>
             <a
               href="https://www.instagram.com/printagainstapartheid/"
               className="socials"
             >
-              <div className="icon_container">
+              {/* <div className="icon_container">
                 <Image src={insta} alt="insta" fill />
-              </div>
-              @printagainstapartheid
+              </div> */}
+              Instagram : @printagainstapartheid
             </a>
           </div>
           <p>

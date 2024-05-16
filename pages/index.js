@@ -321,10 +321,7 @@ export default function Home() {
             are not open during normal business hours. Whilst it is no longer
             illegal to display the Palestinian flag, it is strongly and often
             violently repressed.
-          </p>
-        </div>
-
-        <div className="overview">
+          </p>{" "}
           <ul className="impact_list">
             <li>
               {" "}
@@ -354,7 +351,8 @@ export default function Home() {
               )
             </li>
             <li>
-              • Israel’s control over the Palestinian population is based on a
+              <br></br>
+              Israel’s control over the Palestinian population is based on a
               <span className="underline">
                 system of colour-coded identification cards
               </span>
@@ -383,8 +381,8 @@ export default function Home() {
               cards were used to control the movement of Black citizens.
             </li>
           </ul>
-          <p className="italic">(Statistics up-to-date as of 04/12/23)</p>
         </div>
+
         <div className="overview">
           <h2>COMPLICITY</h2>
           <p>
