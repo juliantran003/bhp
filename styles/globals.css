@@ -112,6 +112,7 @@ body {
   background-color: var(--main-black);
   background-position: top center;
   background-repeat: repeat;
+  width: 100vw;
 
   /* background: url("../public/img/Texturelabs_Paper_340XL.jpg");
   background-size: cover; */
@@ -582,12 +583,13 @@ body {
 
 /* RESOURCES */
 
-.resources {
-  margin: 0 auto;
-  max-width: 1440px;
-  padding: 0px 30px;
-  width: 90%;
-  margin-bottom: 100px;
+.links > div {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .resources > div {
@@ -703,7 +705,7 @@ body {
 @media only screen and (max-width: 768px) {
   .header {
     width: 100%;
-
+    align-items: center;
     padding: 10px 12px 0px 12px;
   }
 
@@ -712,7 +714,7 @@ body {
     height: 80px;
   }
   .header h1 {
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 7px;
   }
   .header h2 {
@@ -722,7 +724,7 @@ body {
   }
 
   .header menu a {
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 0px;
     padding: 9px;
   }
@@ -756,7 +758,7 @@ body {
 
   .home .overview {
     padding: 0px 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .home_menu button {
     font-size: 14px;
@@ -825,12 +827,14 @@ body {
     width: 96.5%;
     padding: 20px 20px;
     margin: 0 auto;
+    text-wrap: wrap;
   }
 
   .resources p {
     text-align: center;
     margin: 0 auto;
-
+    width: 100%;
+    overflow: hidden;
     font-family: "Body";
     font-size: 16px;
     font-weight: light;
@@ -866,6 +870,61 @@ body {
     text-underline-offset: 4px;
     text-decoration: underline;
     cursor: pointer;
-    font-style: italic;
+  }
+  .footer {
+    overflow: hidden;
+    width: 105.6vw;
+  }
+  .collapsible_title {
+    text-decoration: underline;
+    font-size: 16px;
+  }
+  .collapsedText > li {
+    width: 80vw;
+  }
+
+  .footer h1 {
+    font-family: "Title";
+    font-size: 16px;
+  }
+  .footer > div {
+    max-width: 1440px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .links {
+    font-size: 14px;
+  }
+  .links > div {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .links > div a {
+    margin-top: 10px;
+  }
+
+  .footer .socials {
+    font-family: "Body";
+    margin-left: 0px;
+    color: var(--main-white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer p {
+    display: block;
+    text-align: center;
+    line-height: 20px;
   }
 }
