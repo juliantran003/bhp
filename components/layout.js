@@ -1,6 +1,7 @@
 // IMPORTS
 import Header from "./header";
 import Footer from "./footer";
+import Newsletter from "./newsletter";
 
 export default function Layout({ children }) {
   return (
@@ -43,6 +44,7 @@ export default function Layout({ children }) {
         sizes="<generated>"
       />
       <main>{children}</main>
+      <Newsletter />
       <Footer />
     </>
   );
