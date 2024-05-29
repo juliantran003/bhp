@@ -3,11 +3,10 @@ import { useState } from "react";
 
 export default function Newsletter() {
   // States
-  const [subscriberEmail, setSubscriberEmail] = useState();
+  const [subscriberEmail, setSubscriberEmail] = useState("");
 
   // Function
   const handleSubmit = async () => {
-    console.log("hiworld");
     e.preventDefault();
 
     const form = e.target;
@@ -24,9 +23,10 @@ export default function Newsletter() {
       });
 
       setFormState(FormState.SUCCESS);
+      console.log(FormState.SUCCESS);
     } catch (error) {
       setFormState(FormState.ERROR);
-
+      console.log(FormState.ERROR);
       console.error(error);
     }
   };

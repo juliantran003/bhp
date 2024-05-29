@@ -114,11 +114,6 @@ export default function Home() {
                   title={subject.title}
                   content={subject.text}
                 />
-
-                // <li key={subject.title}>
-                //   <span>▻ </span>
-                //   {subject.title}
-                // </li>
               );
             })}
           </ul>

@@ -2,6 +2,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import Newsletter from "./newsletter";
+import Script from "next/script";
 
 export default function Layout({ children }) {
   return (
@@ -43,6 +44,7 @@ export default function Layout({ children }) {
         type="image/<generated>"
         sizes="<generated>"
       />
+
       <main>{children}</main>
       <Newsletter />
       <Footer />
