@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
-
-module.exports = nextConfig
+};
+rewrites: async () => [
+  {
+    source: "/public/ml.html",
+    destination: "/pages/api/ml.js",
+  },
+],
+  (module.exports = nextConfig);
